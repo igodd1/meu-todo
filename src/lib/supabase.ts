@@ -1,20 +1,16 @@
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
+// Substitua os textos abaixo pelas suas chaves do Supabase
+const supabaseUrl = "https://cbqemyctbfuptahpbqpe.supabase.co"; 
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNicWVteWN0YmZ1cHRhaHBicXBlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5NDY1NDAsImV4cCI6MjA5NDUyMjU0MH0.-bdRTjtLqh4MmCD_CxhjLCeI-vyWnjrDHm_t1iSe1BY";
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error("Variáveis de ambiente VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY são obrigatórias.");
-}
-
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 export type Todo = {
   id: number;
   task: string;
   is_completed: boolean;
   created_at: string;
 };
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export async function fetchTodos(): Promise<Todo[]> {
   const { data, error } = await supabase
