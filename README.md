@@ -1,14 +1,13 @@
-# To-Do List Full Stack
+# To-Do List Full Stack 🚀
 
-Projeto desenvolvido para a capacitação técnica utilizando React, TypeScript, Tailwind CSS e Supabase.
+Este projeto é uma lista de tarefas completa, desenvolvida como parte da capacitação técnica.
 
-## 🚀 Tecnologias
-- React + Vite
-- TypeScript
-- Tailwind CSS
-- Supabase (Banco de Dados e Autenticação)
-- Lucide React (Ícones)
+## 🛠️ Tecnologias Utilizadas:
+- **React + Vite** (Front-end)
+- **TypeScript** (Tipagem e segurança)
+- **Tailwind CSS** (Estilização)
+- **Supabase** (Banco de dados PostgreSQL e Realtime)
+- **Gitflow** (Metodologia de trabalho com branches)
 
-## 🔗 Link do Projeto
-[Acesse aqui](https://igodd1.github.io/meu-todo/)
-Última atualização: Maio/2026
+## 🔗 Link para o Projeto:
+[Clique aqui para acessar o site](https://igodd1.github.io/meu-todo/)
